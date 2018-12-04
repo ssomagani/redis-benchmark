@@ -1,0 +1,2 @@
+<2018-12-04 Tue 09:13> Created empty GitHub project. Copied over Redis cloud-deploy files from the old event-backfilling project. Going through the code to determine what to keep
+<2018-12-04 Tue 09:39> Created single Redis 4.0 instance with the template files. Checking in.

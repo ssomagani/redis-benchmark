@@ -1,0 +1,8 @@
+imports:
+- path: server-vm-template.jinja
+
+resources:
+- name: redis-node-1
+  type: server-vm-template.jinja
+  properties:
+    name: redis-node-1
