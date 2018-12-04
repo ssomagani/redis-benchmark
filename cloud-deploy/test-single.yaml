@@ -6,3 +6,4 @@ resources:
   type: server-vm-template.jinja
   properties:
     name: redis-node-1
+    instances: 1
