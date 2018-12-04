@@ -30,7 +30,7 @@ resources:
             sudo apt-get -y install redis-server
             sudo service redis-server stop
             
-            {% for n in range(10) %}
+            {% for n in range(properties["instances"]) %}
             {% set port = n+7000 %}
             mkdir {{port}}
             cd {{port}}
@@ -44,7 +44,7 @@ resources:
             cd ..
             {% endfor %}
             
-            {% for n in range(10) %}
+            {% for n in range(properties["instances"]) %}
             {% set port = n+7000 %} 
             cd {{port}}
             redis-server redis.conf &
